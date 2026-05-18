@@ -1,13 +1,35 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-react-app</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCRIBO - Platform Berbagi Materi Kuliah</title>
+  
+  <!-- Memuat Tailwind CSS untuk mendukung gaya tampilan premium Scribo -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- 
+  <script>
+    // Konfigurasi tambahan Tailwind jika diperlukan (opsional)
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script> 
+  -->
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#020617] text-slate-900 dark:text-slate-100 transition-colors duration-500">
+  
+  <!-- Elemen container utama tempat seluruh aplikasi React akan di-mount/ditempel -->
+  <div id="root"></div>
+
+  <!-- Menghubungkan ke file entry point JavaScript (React Engine) -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
