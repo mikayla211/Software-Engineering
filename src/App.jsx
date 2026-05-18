@@ -595,7 +595,7 @@ export default function App() {
               {!user ? (
                 <button onClick={() => setIsAuthModalOpen(true)} className="px-5 py-2.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-xl text-sm font-bold border border-slate-200 dark:border-slate-700">Masuk</button>
               ) : (
-                <div onClick={() => setCurrentPage('settings')} className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold cursor-pointer transition-transform hover:scale-110 shadow-lg shrink-0">{user.email[0].toUpperCase()}</div>
+                <div onClick={() => setCurrentPage('settings')} className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold cursor-pointer transition-transform hover:scale-110 shadow-lg shrink-0">{(user?.email || 'U').charAt(0).toUpperCase()}</div>
               )}
             </div>
           </div>
